@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ödeme</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="../Resources/Css/payment.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+    <!-- cookie -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <!-- local script -->
+    <script src="../Controllers/payment.js"></script>
+    <script src="../Services/ProductService.js"></script>
+    <script src="../Services/ShoppingCardService.js"></script>
+    <script src="../Controllers/service.js"></script>
+
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="cardNumber">
+                                    KART NUMARASI</label>
+                                <div class="input-group">
+                                    <input type="text" name="number" class="form-control" id="cardNumber1"
+                                        placeholder="Kart Numarası Giriniz" required autofocus />
+                                    <span class="input-group-addon"><span
+                                            class="glyphicon glyphicon-lock"></span></span>
+                                </div>
+                            </div>
+                            <!-- Name -->
+                            <div class="control-group">
+                                <label class="control-label" for="username">KART SAHİBİNİN ADI-SOYADI</label>
+                                <div class="controls">
+                                    <input type="text" class="form-control" id="cardNumber" placeholder="" required />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="expityMonth">
+                                            SON KULLANMA TARİHİ</label>
+                                        <div class="col-xs-6 col-lg-6 pl-ziro">
+                                            <input type="text" name="number" class="form-control" id="expityMonth"
+                                                placeholder="MM" required />
+                                        </div>
+                                        <div class="col-xs-6 col-lg-6 pl-ziro">
+                                            <input type="text" name="number" class="form-control" id="expityYear"
+                                                placeholder="YY" required /></div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 col-md-5 pull-right">
+                                    <div class="form-group">
+                                        <label for="cvCode">
+                                            CVV2 CODE</label>
+                                        <input type="password" name="number" class="form-control" id="cvCode"
+                                            placeholder="CVV2" required />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#"><span class="badge pull-right"><span></span><input type="text"
+                                    style="width:50px;" disabled name="toplam_odenecek_ucret"
+                                    id="toplam_odenecek_ucret"> TL</span> TOPLAM ÖDENECEK TUTAR</a>
+                    </li>
+                </ul>
+                <br />
+                <a href="#" class="btn btn-success btn-lg btn-block" onclick="shoppingCardClear()" id="odeme_yap"
+                    role="button">ÖDEME YAP</a> <br>
+                <a href="shoppingCard.html" class="btn btn-success btn-lg btn-block" style="background-color:peru"
+                    role="button">SEPETE DÖN</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

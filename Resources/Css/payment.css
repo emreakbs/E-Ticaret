@@ -1,0 +1,27 @@
+body {
+    margin-top: 20px;
+    background-color: #1abc9d;
+}
+
+.panel-title {
+    display: inline;
+    font-weight: bold;
+}
+
+.checkbox.pull-right {
+    margin: 0;
+}
+
+.pl-ziro {
+    padding-left: 0px;
+}
+
+#container {
+    margin-top: 110px;
+    /* margin-left: 400px; */
+    padding-left: 200px;
+    height: 500px;
+}
+#expityMonth{
+    margin-top: 25px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Resources/Css/singUp.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+    <script src="../Controllers/signUp.js"></script>
+    <script src="../Services/UserService.js"></script>
+    <script src="../Controllers/service.js"></script>
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="inner-screen">
+        <div class="form">
+            <input type="text" name="signUp" id="txt_SignUp_Name" placeholder="Adınızı giriniz"><br>
+            <input type="text" name="signUp" id="txt_SignUp_SurName" placeholder="Soyadınızı giriniz"><br>
+            <input type="text" name="signUp" id="txt_SignUp_NickName" placeholder="Kullanıcı adınızı giriniz"><br>
+            <input type="password" name="signUp" id="txt_signUp_Password" placeholder="Şifrenizi giriniz"><br>
+            <input type="submit" onclick="userCreateControl()" id="sbmt_SignUp_SignUp" value="Kayıt Ol">
+        </div>
+    </div>
+</body>
+
+</html>

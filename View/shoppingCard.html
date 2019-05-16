@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- jquery -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <!-- cookie -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <!-- bootstrap style -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!-- local css -->
+    <link rel="stylesheet" href="../Resources/Css/shoppingCard.css">
+    <!-- services -->
+    <script src="../Controllers/service.js"></script>
+    <!-- local js -->
+    <script src="../Controllers/shoppingCard.js"></script>
+    <script src="../Services/ShoppingCardService.js"></script>
+    <title>Sepet</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="homePage.html">Ana Sayfa</a></li>
+            <li><a href="shoppingCard.html">Sepeti Görüntüle</a></li>
+            <li><a href="login.html">Çıkış Yap</a></li>
+        </ul>
+    </nav>
+    <div id="div_sepet_info" class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+                <table id="table_urunler" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Ürünler</th>
+                            <th>Adet</th>
+                            <th class="text-center">Adet Fiyatı</th>
+                            <th class="text-center">Toplam Fiyat</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <table id="table_butonlar" class="table table-hover">
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
